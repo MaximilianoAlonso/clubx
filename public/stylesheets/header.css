@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+ height: 60px;
+ width: 100%;
+}
+header img{
+    align-self: center;
+    width: 100px;
+    height: 50px;
+}
+header ul {
+    align-self: center;
+display: flex;
+justify-content: space-around;
+width: 50%;
+}
+header ul li a {
+    text-transform: uppercase;
+    color:white
+}
+header ul li a:hover {
+    font-weight: 600;
+    
+}
+header article{
+    display: flex;
+}
+header article a{
+align-self: center;
+color: white;
+}

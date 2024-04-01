@@ -1,0 +1,66 @@
+
+body {
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la ventana visible */
+    background-image: url('../images/fondo.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Cubrir toda el área */
+    background-position: center; /* Posición centrada */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-attachment:fixed; /* Fija la imagen de fondo */
+  
+}
+.home{
+    padding: 0 150px;
+    color: white;
+}
+
+.contenido{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.404);   
+}
+
+.proximasFechas, .fotos{
+    padding: 20PX;
+}
+
+  .proximasFechas h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .fotos h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  .contenido{
+    padding: 30PX;
+  }
+  .videoContainer{
+   display: flex;
+   justify-content: center;
+   width: 50%;
+   margin: 0 auto;
+  }
+  .presentacion{
+    text-align: center;
+  }
+.presentacion h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  
+  letter-spacing: 2px;
+}
+.presentacion p{
+  letter-spacing: 3px;
+  padding: 20px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  line-height: 30px;
+}
+
