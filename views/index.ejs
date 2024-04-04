@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+  <%- include('./partials/head') %>
 
-<%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <main class="home">
+      <section class="contenido">
+        <article class="presentacion">
+          <p id="typer"></p>
+        </article>
+<div class="videoFondo">
+   <video
+          class="videoContainer"
+          autoplay
+          muted
+          loop
+          preload="auto"
+          width="280"
+        >
+          <source
+            src="../videos/video.mp4"
+            type="video/mp4"
+            autoplay
+            controls="false"
+            
+          />
 
-<body>
-  <%- include('./partials/header') %>
-  <main class="home">
-<section class="contenido">
-  <article class="presentacion">
-    <p>
-  
-      <span>
-      club x
-      </span>
-  
-    </p>
-   
-    <p>Sumérgete en un ambiente electrizante, donde la música contagiosa y las luces hipnóticas te transportarán a otro mundo. Nuestro equipo te brinda una experiencia inigualable con cócteles creativos y áreas VIP exclusivas. Únete a la fiesta y vive momentos inolvidables hasta el amanecer. La noche te espera para celebrar la vida como nunca antes. ¡No te lo pierdas!</p>
-  </article>
- 
-    <video class="videoContainer" autoplay muted loop preload="auto" width="300">
-      <source src="../videos/video.mp4" type="video/mp4" autoplay controls="false">
+          Tu navegador no admite la reproducción de videos.
+        </video>
+</div>
+       
 
-      Tu navegador no admite la reproducción de videos.
-  </video>
+        <article class="proximasFechas">
+          <h1>Proximas Fechas</h1>
+          <section>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../images/fechas/fecha1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/fechas/fecha2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/fechas/fecha3.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </section>
+        </article>
+        <article class="fotos">
+          <h1>Ultimas fotos</h1>
+          <section>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../images/fotos/fotos.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/fotos/fotos1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/fotos/fotos2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </section>
+        </article>
+        <article class="beneficios">
+          <h2>Registrate y obtene beneficios exclusivos</h2>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+              quasi architecto veritatis culpa quisquam? Molestiae, quam.
+              Placeat doloribus aut pariatur?
+            </li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. ?</li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+              quasi architecto veritatis culpa quisquam? Molestiae, quam.
+              Placeat doloribus aut pariatur?
+            </li>
 
-  <article class="proximasFechas">
-    <h1>Proximas Fechas</h1>
-    <section>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../images/fechas/fecha1.png" alt=""></div>
-          <div class="swiper-slide"><img src="../images/fechas/fecha2.png" alt=""></div>
-          <div class="swiper-slide"><img src="../images/fechas/fecha3.png" alt=""></div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-
-  </article>
-  <article class="fotos">
-    <h1>Ultimas fotos</h1>
-    <section>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../images/fotos/fotos.png" alt=""></div>
-          <div class="swiper-slide"><img src="../images/fotos/fotos1.png" alt=""></div>
-          <div class="swiper-slide"><img src="../images/fotos/fotos2.png" alt=""></div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-    
-  </article>
- 
-</section>
-
-
-
-    
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-    <%- include('./partials/footer') %>
-</body>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+          <form action="">
+            <input type="text" name="" id="" placeholder="Nombre" />
+            <input type="text" name="" id="" placeholder="Apelido" />
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Numero de identicacion "
+            />
+            <input type="text" name="" id="" placeholder="Email" />
+            <input type="text" name="" id="" placeholder="Telefono" />
+            <button type="submit">Registrarme!</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <%- include('./partials/footer') %> <%- include('./partials/scripts') %>
+  </body>
 </html>

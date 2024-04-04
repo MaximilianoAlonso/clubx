@@ -1,0 +1,41 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+footer section{
+    width: 25%;
+}
+footer .menuFooter{
+ padding: 30px;
+}
+footer .menuFooter ul li{
+padding: 10px;
+list-style: circle;
+}
+footer .menuFooter ul li a{
+    color: white;
+    text-transform: uppercase;
+
+}
+footer .contacto{
+    padding: 30px;
+   }
+   footer .contacto ul li{
+   padding: 10px;
+   list-style: circle;
+   }
+footer h3{
+    padding-bottom: 15px;
+}
+
+
+footer article{
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}

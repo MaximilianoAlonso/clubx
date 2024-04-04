@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+  }
+body{
+  
 }
 a{
     text-decoration: none;
@@ -31,4 +35,26 @@ li{
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#4e044e;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    transition: all 1s;
+  }
+  .whatsapp:hover{
+    background-color: #911991;
+    transition: all 1s;  
+  }
+  
+  .whatsapp-icon {
+    margin-top:14px;
   }

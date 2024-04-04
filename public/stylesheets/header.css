@@ -4,11 +4,14 @@ header{
     background-color: black;
  height: 60px;
  width: 100%;
-}
+ }
 header img{
     align-self: center;
     width: 100px;
     height: 50px;
+}
+.barsMenu i{
+    display: none
 }
 header ul {
     align-self: center;
@@ -30,4 +33,68 @@ header article{
 header article a{
 align-self: center;
 color: white;
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+     height: 60px;
+     width: 100%;
+     
+     }
+    header img{
+        align-self: center;
+        width: 100px;
+        height: 50px;
+    }
+    .barsMenu i{
+        display: block;
+        height: 40px;
+        margin-top: 10px;
+        align-items: center;
+        color: white;
+        padding: 5px;
+        font-size: 25px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    header ul {
+        align-self: center;
+        position: absolute;
+        top: 60px;
+        text-align: center;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    left: -500px;
+    transition: all 1s;
+    }
+    .verMenu{
+        left: 0;
+    }
+    header ul li a {
+        display: block;
+        padding: 29px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:white
+    }
+    header ul li a:hover {
+        font-weight: 600;
+        
+    }
+    header article{
+        display: flex;
+    }
+    header article a{
+    align-self: center;
+    color: white;
+    }   
+    .redes i{
+        font-size: 40px;
+        margin-top: 10px;
+    }
 }
