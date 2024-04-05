@@ -1,0 +1,6 @@
+.register, .login{
+    margin: 20px 0;
+}
+ .register form, .login form{
+    margin: 0 auto;
+ }

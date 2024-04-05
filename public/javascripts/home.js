@@ -1,10 +1,9 @@
+
 function manejarDesplazamiento() {
-    if (window.innerWidth > 800) { // Verifica si el ancho de la ventana es mayor a 800px
+    if (window.innerWidth > 100) { // Verifica si el ancho de la ventana es mayor a 800px
         let video = document.querySelector('.videoContainer');
         video.classList.add("aparecerVideo");
         let presentacion = document.querySelector(".presentacion");
-        let header = document.querySelector("header");
-        header.classList.add("aparecerHeader");
         presentacion.classList.add("desaparecerPresentacion");
     }
 }
@@ -31,14 +30,5 @@ function maquina(contenedor, texto, intervalo) {
 }
 
 // Ejemplo de uso
-maquina("typer", "Welcome to CLUB X, we present to you the astronauts who descuber new sounds from diferents planets and came to earth to conquer the electronic music. We call them aliens....", 30);
+maquina("typer", "Welcome to CLUB X, we present to you the astronauts who descuber new sounds from diferents planets and came to earth to conquer the electronic music. We call them aliens....", 80);
 
-const menu = document.querySelector("header ul")
-const bars = document.querySelector(".barsMenu")
-bars.addEventListener("click", function(){
-    menu.classList.toggle("verMenu")
-})
-
-document.addEventListener("scroll", function(){
-    menu.style.display = "none";
-});

@@ -1,9 +1,21 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const {fechas,fotos,index,login,processLogin,registro,guardarUsuario} = require("../controllers/indexController")
+const {admin} = require("../controllers/adminController")
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+/* Index */
+router.get('/', index)
+      .get("/registro", registro)
+      .post("/registro", guardarUsuario)
+      .get("/login", login)
+      .post("/login", processLogin)
+      .get("/fotos", fotos)
+      .get("/fechas", fechas)
 
-module.exports = router;
+
+
+/* Admin */
+      .get("/admin", admin)
+
+
+      module.exports = router;

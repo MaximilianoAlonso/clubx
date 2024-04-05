@@ -9,101 +9,94 @@
         <article class="presentacion">
           <p id="typer"></p>
         </article>
-<div class="videoFondo">
-   <video
-          class="videoContainer"
-          autoplay
-          muted
-          loop
-          preload="auto"
-          width="280"
-        >
-          <source
-            src="../videos/video.mp4"
-            type="video/mp4"
-            autoplay
-            controls="false"
-            
-          />
-
-          Tu navegador no admite la reproducción de videos.
-        </video>
-</div>
-       
-
         <article class="proximasFechas">
-          <h1>Proximas Fechas</h1>
+          <h2>Proximas Fechas</h2>
           <section>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                  <div> 
                   <img src="../images/fechas/fecha1.png" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div >
                   <img src="../images/fechas/fecha2.png" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div >
                   <img src="../images/fechas/fecha3.png" alt="" />
                 </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
+             
           </section>
         </article>
-        <article class="fotos">
-          <h1>Ultimas fotos</h1>
+        <article class="proximasFechas">
+          <h2>Ultimas fotos</h2>
           <section>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+           
+                <div >
                   <img src="../images/fotos/fotos.png" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div >
                   <img src="../images/fotos/fotos1.png" alt="" />
                 </div>
-                <div class="swiper-slide">
+                <div >
                   <img src="../images/fotos/fotos2.png" alt="" />
                 </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </section>
+                
+                <div >
+                  <img src="../images/fotos/fotos.png" alt="" />
+                </div>
+                <div >
+                  <img src="../images/fotos/fotos1.png" alt="" />
+                </div>
+                <div >
+                  <img src="../images/fotos/fotos2.png" alt="" />
+                </div>
+              
+             
         </article>
         <article class="beneficios">
-          <h2>Registrate y obtene beneficios exclusivos</h2>
+          <h2 id="registro">Registrate y obtene beneficios exclusivos</h2>
           <ul>
             <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-              quasi architecto veritatis culpa quisquam? Molestiae, quam.
-              Placeat doloribus aut pariatur?
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </li>
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. ?</li>
             <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-              quasi architecto veritatis culpa quisquam? Molestiae, quam.
-              Placeat doloribus aut pariatur?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </li>
 
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
           </ul>
-          <form action="">
-            <input type="text" name="" id="" placeholder="Nombre" />
-            <input type="text" name="" id="" placeholder="Apelido" />
+          <form id="registro"  method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+            <input type="text" name="apellido" id="apellido" placeholder="Apelido" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="text" name="telefono" id="telefono" placeholder="Telefono" />
             <input
               type="text"
-              name=""
-              id=""
+              name="identificacion"
+              id="identificacion"
               placeholder="Numero de identicacion "
             />
-            <input type="text" name="" id="" placeholder="Email" />
-            <input type="text" name="" id="" placeholder="Telefono" />
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <input type="password" id="password1" name="password1" placeholder="Repetir Contraseña">
             <button type="submit">Registrarme!</button>
           </form>
         </article>
       </section>
     </main>
-    <%- include('./partials/footer') %> <%- include('./partials/scripts') %>
+     <!-- Swiper JS -->
+
+  
+    <%- include('./partials/footer') %> 
+  
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    <%- include('./partials/scripts') %>
 </html>

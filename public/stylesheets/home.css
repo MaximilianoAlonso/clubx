@@ -1,98 +1,95 @@
-
 body {
-    width: 100%; /* Ancho completo */
-    height: 100vh; /* Altura de la ventana visible */
-    background-image: url('../images/fondo.jpg'); /* Ruta de tu imagen */
-    background-size: cover; /* Cubrir toda el área */
-    background-position: center; /* Posición centrada */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    background-attachment:fixed; /* Fija la imagen de fondo */
-  
+  width: 100%; /* Ancho completo */
+  height: 100vh; /* Altura de la ventana visible */
+  background-image: url("../images/fondo.jpg"); /* Ruta de tu imagen */
+  background-size: cover; /* Cubrir toda el área */
+  background-position: center; /* Posición centrada */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-attachment: fixed; /* Fija la imagen de fondo */
 }
-.home{
-    padding: 0 150px;
-    color: white;
+.home {
+  padding: 0 150px;
+  color: white;
+}
+.videoContainer {
+  width: 60%;
+  display: none;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 1s;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
-.contenido{
-    height: auto;
-    background-color:#00000067;   
-    
+.contenido {
+  margin-top: 50px;
+  height: auto;
+  background-color: #00000067;
 }
 
-.proximasFechas, .fotos{
-    padding: 20PX;
+.proximasFechas {
+
+  width: 100%;
+}
+.beneficios h2, .fotos h2, .proximasFechas h2 {
+  font-size: 25px;
+ text-align: center;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ padding: 20px 0;
+ }
+ .proximasFechas {
+width: 100%;
+ }
+ .proximasFechas section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+   } 
+
+.proximasFechas  section img{
+  width: 100%;
+  margin: 0 auto;
 }
 
-  .proximasFechas h1{
-    text-align: center;
-    padding: 20px 0;
-    font-size: 35px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  .fotos h1{
-    text-align: center;
-    padding: 20px 0;
-    font-size: 35px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 50px;
-  }
- 
-  .videoFondo{
-    width: 100%;
-    background-color: black;
-    -webkit-box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-    box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-  }
-  .videoContainer{
-    width: 100%;
-   display: flex;
-   justify-content: center;
-   width: 45%;
-   margin: 0 auto;
-   background-color: black;
-   opacity: 0;
-   transition: all 2s;
-   padding: 50px;
-  }
-  
-  .aparecerVideo{
-    opacity: 1;
-   
-  }
 
-  .presentacion{
-    text-align: center;
-   
-    opacity: 1;
-    transition: all 1s;
-  }
-  .desaparecerPresentacion{
-    height: 0;
-opacity: 0;
-  }
-.presentacion h1{
+
+.aparecerVideo {
+  opacity: 1;
+}
+
+.presentacion {
+  text-align: center;
+
+  opacity: 1;
+  transition: all 1s;
+}
+.desaparecerPresentacion {
+  height: 0;
+  opacity: 0;
+}
+.presentacion h1 {
   font-size: 35px;
   text-transform: uppercase;
-  
   letter-spacing: 2px;
 }
 
-.presentacion p{ height: 600px;
+.presentacion p {
+  height: 500px;
   letter-spacing: 3px;
-  padding: 50px 200PX;
+  padding: 50px 200px;
   font-size: 25px;
   text-transform: uppercase;
   word-spacing: 5px;
   line-height: 50px;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff; /* Efecto de resplandor blanco */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
+    0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff; /* Efecto de resplandor blanco */
 
-     /* Sombra del texto */
+  /* Sombra del texto */
 }
-.beneficios{
+.beneficios {
   margin-top: 100px;
   display: flex;
   background-color: rgba(55, 6, 61, 0.575);
@@ -100,29 +97,29 @@ opacity: 0;
   padding: 40px;
   flex-wrap: wrap;
 }
-.beneficios ul{
+.beneficios ul {
   width: 50%;
 }
-.beneficios h2{
+.beneficios h2 {
   width: 100%;
   text-align: center;
 }
-.beneficios ul li{
+.beneficios ul li {
   padding: 20px;
-  list-style:disc;
+  list-style: disc;
 }
-.beneficios form{
+.beneficios form {
   width: 50%;
   display: flex;
   padding-top: 20px;
   flex-direction: column;
 }
-.beneficios form input{
+.beneficios form input {
   margin-bottom: 10px;
   padding: 16px;
   border-radius: 5px;
 }
-.beneficios form button{
+.beneficios form button {
   padding: 16px;
   font-size: 20px;
   text-transform: uppercase;
@@ -131,153 +128,148 @@ opacity: 0;
   letter-spacing: 1;
   transition: all 2s;
 }
-.beneficios form button:hover{
-letter-spacing: 3px;
-transition: all 2s;
+.beneficios form button:hover {
+  letter-spacing: 3px;
+  transition: all 2s;
 }
-
 
 /* Mobile */
 @media (max-width: 768px) {
- 
-body {
-  width: 100%; /* Ancho completo */
-  height: 100vh; /* Altura de la ventana visible */
-  background-image: url('../images/fondo.jpg'); /* Ruta de tu imagen */
-  background-size: cover; /* Cubrir toda el área */
-  background-position: center; /* Posición centrada */
-  background-repeat: no-repeat; /* No repetir la imagen */
-  background-attachment:fixed; /* Fija la imagen de fondo */
+  body {
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la ventana visible */
+    background-image: url("../images/fondo.jpg"); /* Ruta de tu imagen */
+    background-size: cover; /* Cubrir toda el área */
+    background-position: center; /* Posición centrada */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+  }
+  .home {
+    padding: 0 10px;
+    color: white;
+  }
 
-}
-.home{
-  padding: 0 10px;
-  color: white;
-}
+  .contenido {
+    height: auto;
+    margin-top: 0;
+    background-color: #00000067;
+  }
 
-.contenido{
-  height: auto;
-  background-color:#00000067;   
+  .proximasFechas,
+  .fotos {
+    padding: 20px;
+  }
+
+  .proximasFechas h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .fotos h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+
+  .videoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 1s;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  .aparecerVideo {
+    opacity: 1;
+  }
+
+  .presentacion {
+    text-align: center;
+    opacity: 1;
+    transition: all 1s;
+  }
+  .desaparecerPresentacion {
+    height: 0;
+    opacity: 0;
+  }
+  .presentacion h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .presentacion p {
+    height: 600px;
+    letter-spacing: 3px;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    line-height: 40px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
+      0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff; /* Efecto de resplandor blanco */
+
+    /* Sombra del texto */
+  }
+  .beneficios {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(55, 6, 61, 0.575);
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .beneficios ul {
+    width: 90%;
+
+    list-style: circle !important;
+  }
+  .beneficios h2, .fotos h2, .proximasFechas h2 {
+   font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  }
+  .beneficios ul li {
+   letter-spacing: 2px;
+    padding: 10px;
   
-}
-
-.proximasFechas, .fotos{
-  padding: 20PX;
-}
-
-.proximasFechas h1{
-  text-align: center;
-  padding: 20px 0;
-  font-size: 35px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.fotos h1{
-  text-align: center;
-  padding: 20px 0;
-  font-size: 35px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 50px;
-}
-
-.videoFondo{
-  padding-top: 50px;
-  width: 100%;
-  background-color: black;
-  -webkit-box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-  box-shadow: 0px 13px 10px -3px rgba(0,0,0,1);
-}
-.videoContainer{
-  width: 100%;
- display: flex;
- justify-content: center;
- width: 45%;
- margin: 0 auto;
- background-color: black;
- opacity: 0;
- transition: all 2s;
- padding: 10px;
- width: 100%; /* En pantallas mayores a 700px, el video ocupará el 100% del ancho */
- max-width: 1000px; /* Limita el ancho máximo del video para que no se estire demasiado en pantallas muy grandes */
- margin: 0 auto; 
-}
-
-
-.aparecerVideo{
-  opacity: 1;
- 
-}
-
-.presentacion{
-  text-align: center;
- 
-  opacity: 1;
-  transition: all 1s;
-}
-.desaparecerPresentacion{
-  height: 0;
-opacity: 0;
-}
-.presentacion h1{
-font-size: 35px;
-text-transform: uppercase;
-letter-spacing: 2px;
-}
-
-.presentacion p{ height: 600px;
-letter-spacing: 3px;
-padding: 10px;
-font-size: 18px;
-text-transform: uppercase;
-word-spacing: 5px;
-line-height: 50px;
-text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff; /* Efecto de resplandor blanco */
-
-   /* Sombra del texto */
-}
-.beneficios{
-margin-top: 100px;
-display: flex;
-background-color: rgba(55, 6, 61, 0.575);
-border-radius: 10px;
-padding: 40px;
-flex-wrap: wrap;
-}
-.beneficios ul{
-width: 50%;
-}
-.beneficios h2{
-width: 100%;
-text-align: center;
-}
-.beneficios ul li{
-padding: 20px;
-list-style:disc;
-}
-.beneficios form{
-width: 50%;
-display: flex;
-padding-top: 20px;
-flex-direction: column;
-}
-.beneficios form input{
-margin-bottom: 10px;
-padding: 16px;
-border-radius: 5px;
-}
-.beneficios form button{
-padding: 16px;
-font-size: 20px;
-text-transform: uppercase;
-background-color: black;
-color: white;
-letter-spacing: 1;
-transition: all 2s;
-}
-.beneficios form button:hover{
-letter-spacing: 3px;
-transition: all 2s;
-} 
+  }
+  .beneficios form {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .beneficios form input {
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  .beneficios form button {
+    padding: 16px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    letter-spacing: 1;
+    transition: all 2s;
+    border:2px solid #ffffff;
+    box-shadow: 0 0 5px white;
+    margin-bottom: 50px;
+  }
+  .beneficios form button:hover {
+    letter-spacing: 3px;
+    transition: all 2s;
+  }
+  
 }

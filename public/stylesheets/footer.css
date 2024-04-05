@@ -2,6 +2,7 @@ footer{
     background-color: black;
     color: white;
     display: flex;
+    justify-content: center;
     
     flex-wrap: wrap;
 }
@@ -10,6 +11,14 @@ footer section{
 }
 footer .menuFooter{
  padding: 30px;
+ 
+}
+.mapa{
+height: 280px;
+width: 400px;
+overflow-y: hidden;
+padding-top: 10px;
+
 }
 footer .menuFooter ul li{
 padding: 10px;
@@ -28,6 +37,8 @@ footer .contacto{
    list-style: circle;
    }
 footer h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
     padding-bottom: 15px;
 }
 
@@ -38,4 +49,54 @@ footer article{
     height: 70px;
     line-height: 70px;
     text-align: center;
+}
+@media (max-width: 768px) {
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer section{
+        width: 100%;
+        text-align: center;
+    }
+    footer .menuFooter{
+     padding: 30px;
+    }
+    footer .menuFooter ul li{
+    padding: 10px;
+    list-style: circle;
+    }
+    footer .menuFooter ul li a{
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2PX;
+        text-transform: uppercase;
+    
+    }
+    footer .contacto{
+        padding: 30px;
+       }
+       footer .contacto ul li{
+       padding: 10px;
+       list-style: circle;
+       font-size: 20px;
+       letter-spacing: 2px;
+       }
+    footer h3{
+        padding-bottom: 15px;
+        font-size: 22px;
+   
+    }
+    
+    
+    footer article{
+        width: 100%;
+        background-color: rgb(19, 18, 18);
+        height: 150px;
+        line-height: 30px;
+        text-align: center;
+    }    
 }

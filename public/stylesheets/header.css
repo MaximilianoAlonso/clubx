@@ -1,100 +1,147 @@
-header{
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+header img {
+  align-self: center;
+  width: 100px;
+  height: 50px;
+}
+.barsMenu i {
+  display: none;
+}
+header ul {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+header ul li a {
+  text-transform: uppercase;
+  color: white;
+}
+header ul li a:hover {
+  font-weight: 600;
+}
+header article {
+  display: flex;
+}
+header article a {
+  align-self: center;
+  color: white;
+}
+.botonesFlotantes {
+  display: none;
+}
+.redes i {
+  font-size: 30px;
+  margin-top: 10px;
+
+}
+@media (max-width: 1024px) {
+  header {
     display: flex;
+    position: relative;
     justify-content: space-around;
     background-color: black;
- height: 60px;
- width: 100%;
- }
-header img{
+    height: 60px;
+    width: 100%;
+  }
+  header img {
     align-self: center;
     width: 100px;
     height: 50px;
-}
-.barsMenu i{
-    display: none
-}
-header ul {
+  }
+  .barsMenu i {
+    display: block;
+    height: 40px;
+    margin-top: 12px;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  header ul {
     align-self: center;
-display: flex;
-justify-content: space-around;
-width: 50%;
-}
-header ul li a {
-    text-transform: uppercase;
-    color:white
-}
-header ul li a:hover {
-    font-weight: 600;
-    
-}
-header article{
+    position: absolute;
+    top: 60px;
+    text-align: center;
     display: flex;
-}
-header article a{
-align-self: center;
-color: white;
-}
-@media (max-width: 768px) {
-    header{
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-     height: 60px;
-     width: 100%;
-     
-     }
-    header img{
-        align-self: center;
-        width: 100px;
-        height: 50px;
-    }
-    .barsMenu i{
-        display: block;
-        height: 40px;
-        margin-top: 10px;
-        align-items: center;
-        color: white;
-        padding: 5px;
-        font-size: 25px;
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-    header ul {
-        align-self: center;
-        position: absolute;
-        top: 60px;
-        text-align: center;
-    display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     background-color: black;
     left: -500px;
+    z-index: 100;
     transition: all 1s;
-    }
-    .verMenu{
-        left: 0;
-    }
-    header ul li a {
-        display: block;
-        padding: 29px 0;
-        font-size: 20px;
-        text-transform: uppercase;
-        color:white
-    }
-    header ul li a:hover {
-        font-weight: 600;
-        
-    }
-    header article{
-        display: flex;
-    }
-    header article a{
+  }
+  .verMenu {
+    left: 0;
+  }
+  header ul li a {
+    display: block;
+    padding: 29px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.5s;
+  }
+  header ul li a:hover {
+    font-weight: 600;
+    letter-spacing: 10px;
+  }
+  header article {
+    display: flex;
+  }
+  header article a {
     align-self: center;
     color: white;
-    }   
-    .redes i{
-        font-size: 40px;
-        margin-top: 10px;
-    }
+  }
+  .redes i {
+    font-size: 40px;
+    margin-top: 10px;
+  
+}
+.botonesFlotantes {
+  display: flex;
+}
+.botonRegistro {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 50%;
+  border-top: 2px solid white;
+}
+.botonIngresar {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0);
+  width: 50%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+.botonRegistro a {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+.botonIngresar a {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+.botonRegistro a:hover {
+  letter-spacing: 2px;
+}
+.botonIngresar a:hover {
+  letter-spacing: 2px;
+}
 }
