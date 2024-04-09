@@ -1,0 +1,34 @@
+.perfil{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.perfil h2{
+    font-size: 25px !important;
+    text-align: center;
+    font-size: 50px;
+}
+.perfil .user{
+    background-color:rgba(56, 56, 56, 0.589);
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.perfil .user p{
+    width: 80%;
+   padding: 10px 0;
+   margin: 0 auto;
+}
+.perfil .user a{
+    display: block;
+    background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        width: 50%;
+   padding: 10px;
+   margin: 0 auto;
+}
+

@@ -4,10 +4,19 @@
 
   <body>
     <%- include('./partials/header') %>
-    <main class="todasLasFotos">
-        <h1>
-          Fotos
-        </h1>
+    <main class="perfil">
+      
+        <h2>
+         Bienvenid@ <%= nombre %>
+        </h2>
+        <section class="user">
+          <p><b>Nombre: </b> <%= nombre %></p>
+          <p><b>Apellido: </b> <%= apellido %></p>
+          <p><b> E-mail: </b><%= email %></p>
+          <p><b>Teléfono: </b> <%= telefono %></p>
+          <p><b>Identiicacion:</b>  <%= identiicacion %></p>
+          <a href="/logOut ">Salir</a>
+        </section>
     </main>
 
     <%- include('./partials/footer') %>   

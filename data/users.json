@@ -1,0 +1,11 @@
+[
+   {
+      "id": 1,
+      "nombre": "Maximiliano",
+      "apellido": "Alonso",
+      "email": "elgrungemaxi1986@gmail.com",
+      "telefono": "123123123",
+      "identiicacion":"123",
+      "password": "123"
+   }
+]
