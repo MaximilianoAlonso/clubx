@@ -1,0 +1,26 @@
+.dashboard{
+    color: white;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    text-align: center;
+
+}
+.dashboard section  {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.418);
+border-radius: 10px;
+margin-top: 30px;
+width: 50%;
+display: flex;
+flex-direction: column;
+margin: 0 auto  ;
+
+}
+.dashboard section a {
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

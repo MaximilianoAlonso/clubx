@@ -4,13 +4,23 @@
 
   <body>
     <%- include('./partials/header') %>
-    <main class="fechas">
-      <h1>Todas las Fechas
-      </h1>
-        
+    <main class="todasLasFotos">
+        <h1 style="margin-top: 100px;">
+          Todas las fechas
+        </h1>
+        <section>
+          <% fechasData.forEach(element => { %>
+            <a class="card" href="detailFechas/<%= element.id %>">
+              <img src="images/<%= element.fotos[0] %>" alt="">
+              <h2><%= element.titulo %></h2>
+              <p><%= element.contenido %></p>
+            </a>
+           
+          <% }) %>
+        </section>
     </main>
 
-    <%- include('./partials/footer') %> 
+    <%- include('./partials/footer') %>   
     <%- include('./partials/scripts') %>
   </body>
 </html>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "titulo": "titulo",
+    "subtitulo": "subtitulo",
+    "contenido": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus libero ea sunt totam, temporibus, laborum cumque voluptate aspernatur distinctio dolore facere labore ipsam eaque vel. Alias itaque quod saepe.",
+    "fotos": [
+      "1712717929172-fotos.png",
+      "1712717929183-fotos1.png",
+      "1712717929197-fotos2.png"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "titulo",
+    "subtitulo": "subtitulo",
+    "contenido": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus libero ea sunt totam, temporibus, laborum cumque voluptate aspernatur distinctio dolore facere labore ipsam eaque vel. Alias itaque quod saepe.",
+    "fotos": [
+      "1712717929172-fotos.png",
+      "1712717929183-fotos1.png",
+      "1712717929197-fotos2.png"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "titulo",
+    "subtitulo": "subtitulo",
+    "contenido": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus libero ea sunt totam, temporibus, laborum cumque voluptate aspernatur distinctio dolore facere labore ipsam eaque vel. Alias itaque quod saepe.",
+    "fotos": [
+      "1712717929172-fotos.png",
+      "1712717929183-fotos1.png",
+      "1712717929197-fotos2.png"
+    ]
+  }
+]

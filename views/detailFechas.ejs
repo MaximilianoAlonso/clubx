@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+    <main class="fotosDetail">
+     <h1><%= titulo %></h1>
+    <h2><%= subtitulo %></h2>
+    <p><%= contenido %></p>
+      <section class="allImg">
+            <% for( let i = 0; i < fotos.length; i++ ) { %>
+            <img src="/images/<%= fotos[i] %>" alt="...">
+        <% } %>
+      </section>
+    
+
+</main>
+
+    <%- include('./partials/footer') %> 
+    <%- include('./partials/scripts') %>
+  </body>
+</html>

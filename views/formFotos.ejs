@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+            <main class="adminform">
+                <h1>Crear album de fotos</h1>
+                <a href="dashboard">Volver al Dashboard</a>
+
+                <form method="post"  enctype="multipart/form-data">
+                    <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título">
+                    <input type="text" id="subtitulo" name="subtitulo" placeholder="Ingrese del evento">
+                    <textarea id="contenido" name="contenido" placeholder="Ingrese el contenido" rows="4"></textarea>
+                    <label class="files" for="fotos">Seleccione una o varias fotos</label>
+                    <input type="file" id="fotos" name="fotos"  multiple>                    
+                    <button type="submit">Crear</button>
+              
+                </form>
+
+
+            </main>
+
+
+    </body>
+
+</html>

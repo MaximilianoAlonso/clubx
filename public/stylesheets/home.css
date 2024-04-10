@@ -89,6 +89,7 @@ width: 100%;
 
   /* Sombra del texto */
 }
+
 .beneficios {
   margin-top: 100px;
   display: flex;
@@ -132,6 +133,33 @@ width: 100%;
   letter-spacing: 3px;
   transition: all 2s;
 }
+
+
+
+.home .ultimasFotos{
+  display: flex;
+  justify-content: space-around;   
+  width: 100%; 
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.home .ultimasFotos .card {
+  margin: 20px;
+width: 30%;
+padding: 10px;
+background-color: rgba(240, 248, 255, 0.425);
+color: white;
+}
+.home .ultimasFotos .card img{
+  margin: 0 auto;
+  width: 100%;
+  }
+.home .ultimasFotos .card h2 {
+  padding: 20px;
+  text-align: center;
+  }
+
+
 
 /* Mobile */
 @media (max-width: 768px) {

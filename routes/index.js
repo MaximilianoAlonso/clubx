@@ -1,10 +1,28 @@
 const express = require("express");
 const router = express.Router();
+const multer  = require("multer")
+const checkUser = require("../middlewares/checkUser");
+const checkAdmin = require("../middlewares/checkAdmin");
+const path = require('path');
+
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/images');
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + '-' + file.originalname);
+  }
+});
+
+const upload = multer({ storage: storage });
 const {
   fechas,
   fotos,
   index,
-  verificarQr
+  verificarQr,
+  todasLasFotos,
+  todasLasFechas
   /*  verificarQr, */
 } = require("../controllers/indexController");
 const {
@@ -16,12 +34,14 @@ const {
   logOut
 } = require("../controllers/userController");
 const {
-  admin,
+  adminLogin,
   adminProcess,
   dashboard,
+  adminFechas,
+  fotosProcess,
+  adminFotos,
+  fechasProcess
 } = require("../controllers/adminController");
-const checkUser = require("../middlewares/checkUser");
-const checkAdmin = require("../middlewares/checkAdmin");
 
 
 router
@@ -37,14 +57,22 @@ router
   .post("/login", processLogin)
   .get("/perfil", checkUser, perfil)
   .get('/logOut', logOut)
-
+  
   /* Admin */
-  .get("/admin", admin)
-  .post("/admin", adminProcess)
+  .get("/admin", adminLogin)
   .get("/dashboard", checkAdmin, dashboard)
+    .post("/admin", adminProcess)
 
- /* QR */ 
-   
+  .get("/formFechas", checkAdmin, adminFechas)
+  .post("/formFechas", upload.array('fotos', 10), fechasProcess)
+  .get("/detailFechas/:id", todasLasFechas)
+
+  .get("/formFotos", checkAdmin, adminFotos)
+  .post("/formFotos", upload.array('fotos', 30), fotosProcess)
+  .get("/detailFoto/:id", todasLasFotos)
+
+
+  /* QR */    
  .get("/verificar/:id", verificarQr);
 
 module.exports = router;

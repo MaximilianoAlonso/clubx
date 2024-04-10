@@ -1,0 +1,59 @@
+.adminform h1{
+    color: aliceblue;
+    margin-top:100px;
+    text-align: center;
+}
+.adminform form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+.adminform input{
+    margin-top: 15px;
+    padding: 10px;
+
+}
+.adminform textarea{
+    margin: 15px 0;
+    padding: 10px;
+    
+
+}
+.adminform button{
+    margin-top: 15px;
+    padding: 10px;
+background-color: black;
+color: white;
+text-align: center;
+}
+.adminform #fotos{
+display: none;}
+.adminform a{
+    display: block;
+    text-align: center;
+    width: 30%;
+    color:white;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+.adminform .files{
+    display: block;
+    text-align: center;
+    width: 100%;
+  cursor: pointer;
+    color:white;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+.adminform button{
+    cursor: pointer;
+}

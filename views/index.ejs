@@ -12,42 +12,27 @@
         <article class="proximasFechas">
           <h2>Proximas Fechas</h2>
           <section>
-                  <div> 
-                  <img src="../images/fechas/fecha1.png" alt="" />
+            <% fechasData.forEach((item,i )=> { %>
+                <div> 
+                  <img src="../images/<%= item.fotos[0]%> " alt="" />
                 </div>
-                <div >
-                  <img src="../images/fechas/fecha2.png" alt="" />
-                </div>
-                <div >
-                  <img src="../images/fechas/fecha3.png" alt="" />
-                </div>
+            <% }) %>
+                
              
           </section>
         </article>
         <article class="proximasFechas">
           <h2>Ultimas fotos</h2>
-          <section>
+          <section class="ultimasFotos">
            
-                <div >
-                  <img src="../images/fotos/fotos.png" alt="" />
-                </div>
-                <div >
-                  <img src="../images/fotos/fotos1.png" alt="" />
-                </div>
-                <div >
-                  <img src="../images/fotos/fotos2.png" alt="" />
-                </div>
-                
-                <div >
-                  <img src="../images/fotos/fotos.png" alt="" />
-                </div>
-                <div >
-                  <img src="../images/fotos/fotos1.png" alt="" />
-                </div>
-                <div >
-                  <img src="../images/fotos/fotos2.png" alt="" />
-                </div>
-              
+            <% fotosData.forEach(element => { %>
+              <a class="card" href="detailFoto/<%= element.id %>">
+                <img src="images/<%= element.fotos[0] %>" alt="">
+                <h2><%= element.titulo %></h2>
+                <p><%= element.contenido %></p>
+              </a>
+             
+            <% }) %>
              
         </article>
       </section>
