@@ -13,12 +13,13 @@ body {
 }
 
 .contenido {
-  margin-top: 0;
+  margin-top: 20px;
   height: auto;
   background-color: #00000067;
 }
 
 .proximasFechas {
+  margin-top: -40px;
 position: relative;
   width: 100%;
 }
@@ -196,7 +197,7 @@ color: white;
 
   .proximasFechas,
   .fotos {
-    padding: 20px;
+    padding: 0;
   }
 
   .proximasFechas h1 {
@@ -212,22 +213,18 @@ color: white;
     font-size: 35px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 90px;
   }
-
-  .videoContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    opacity: 0;
-    transition: all 1s;
-    padding: 50px 0;
-    margin: 0 auto;
+  .home .ultimasFotos .card {
+    margin: 20px;
+  width: 100%;
+ 
   }
-  .aparecerVideo {
-    opacity: 1;
-  }
+ 
+  .home .ultimasFotos .card h2 {
+    padding: 20px;
+    text-align: center;
+    }
 
   .presentacion {
     text-align: center;
@@ -256,6 +253,11 @@ color: white;
       0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff; /* Efecto de resplandor blanco */
 
     /* Sombra del texto */
+  }
+ 
+  .ultimasFotos {
+   
+    width: 100%;
   }
   .beneficios {
     margin-top: 100px;
@@ -310,5 +312,30 @@ color: white;
     letter-spacing: 3px;
     transition: all 2s;
   }
+
+
+
+  .proximasFechas .accesoFechas{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1000;
+    display: flex;
+    
+    }
+    .proximasFechas .accesoFechas a {
+    display: block;
+    background-color: rgb(49, 182, 9);
+    padding: 2px;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: 0 0 5px greenyellow;
+    
+    }
+    
   
 }
