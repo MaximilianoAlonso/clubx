@@ -5,7 +5,39 @@
       "apellido": "Alonso",
       "email": "elgrungemaxi1986@gmail.com",
       "telefono": "123123123",
-      "identiicacion":"123",
+      "identiicacion": "123",
       "password": "123"
+   },
+   {
+      "id": 2,
+      "nombre": "Maximiliano",
+      "apellido": "Alonso",
+      "email": "elgrungemaxi1986@gmail.com",
+      "telefono": "123123",
+      "password": "123123"
+   },
+   {
+      "id": 3,
+      "nombre": "Maximiliano",
+      "apellido": "Alonso",
+      "email": "elgrungemaxi1986@gmail.com",
+      "telefono": "123123",
+      "password": "123123"
+   },
+   {
+      "id": 4,
+      "nombre": "Maximiliano",
+      "apellido": "Alonso",
+      "email": "elgrungemaxi1986@gmail.com",
+      "telefono": "123123",
+      "password": "123123"
+   },
+   {
+      "id": 5,
+      "nombre": "aqweqwe",
+      "apellido": "qeqwe",
+      "email": "elgrungemaxi1986@gmail.com",
+      "telefono": "123123",
+      "password": "123123123"
    }
 ]

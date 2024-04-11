@@ -5,13 +5,12 @@
   <body>
     <%- include('./partials/header') %>
     <main class="todasLasFotos">
-        <h1 style="margin-top: 100px;"> 
-          Fotos
+        <h1 >           Fotos
         </h1>
         <section>
           <% fotosData.forEach(element => { %>
             <a class="card" href="detailFoto/<%= element.id %>">
-              <img src="images/<%= element.fotos[0] %>" alt="">
+              <img  src="images/<%= element.fotos[0] %>" alt="">
               <h2><%= element.titulo %></h2>
               <p><%= element.contenido %></p>
             </a>
@@ -21,6 +20,9 @@
     </main>
 
     <%- include('./partials/footer') %>   
+   
+  
+    
     <%- include('./partials/scripts') %>
   </body>
 </html>

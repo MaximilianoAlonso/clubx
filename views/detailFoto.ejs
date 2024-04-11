@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
   <%- include('./partials/head') %>
 
@@ -10,7 +10,10 @@
     <p><%= contenido %></p>
       <section class="allImg">
             <% for( let i = 0; i < fotos.length; i++ ) { %>
-            <img src="/images/<%= fotos[i] %>" alt="...">
+              <div class="fondoFoto">
+                 <img class="fotosZoom" src="/images/<%= fotos[i] %>" alt="...">
+              </div>
+           
         <% } %>
       </section>
     
@@ -18,6 +21,9 @@
 </main>
 
     <%- include('./partials/footer') %> 
+   
+    
     <%- include('./partials/scripts') %>
+
   </body>
 </html>

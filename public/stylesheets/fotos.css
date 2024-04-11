@@ -19,7 +19,7 @@
     margin: 20px;
 width: 30%;
 padding: 10px;
-background-color: rgba(240, 248, 255, 0.425);
+background-color: rgba(0, 0, 0, 0.596);
 color: white;
 }
 .todasLasFotos section .card img{
@@ -57,4 +57,64 @@ padding: 30px;
  }
  .fotosDetail .allImg img{
     margin: 20px;
+    width: 350px; /* Tamaño inicial de la imagen */
+    transition: width 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
  }
+  
+
+  
+ @media (max-width: 1024px) { 
+  
+   
+    .todasLasFotos section{
+       
+        padding: 10px;
+    }
+    .todasLasFotos section .card {
+        margin: 10px;
+    width: 90%;
+    padding: 10px;
+
+    }
+    .todasLasFotos section .card img{
+        margin: 0 auto;
+        width: 100%;
+        }
+    .todasLasFotos section .card h2 {
+        padding: 10px;
+        text-align: center;
+        }
+    
+     /* detalle */ 
+     .fotosDetail{
+        text-align: center;
+        color: white;
+        background-color: #00000067;
+        margin: 0 10px;
+        
+     }
+     .fotosDetail h1{
+        text-align: center;
+        font-size: 40px ;
+        margin: 50px 0 20px 0;
+     }  
+    
+     .fotosDetail p{
+        width: 80%;
+        font-weight: 500;
+        margin: 0 auto;
+        font-size: 20px;
+     }  
+     .fotosDetail .allImg{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    padding: 30px;
+    width: 100%;
+     }
+      .allImg img{
+        margin: 20px;
+        width: 100% !important
+     }
+  }

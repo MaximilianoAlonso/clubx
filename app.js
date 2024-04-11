@@ -12,7 +12,7 @@ const app = express();
 
 const cookieCheck = require("./middlewares/cookieCheck");
 const localsUserCheck = require('./middlewares/localsUserCheck');
-
+const userValidation = require("./middlewares/userValidation")
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -28,8 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')))
       resave: false,
       saveUninitialized: true
     }))
-.use(cookieCheck) //cargo en session lo que hay en la cookie
-.use(localsUserCheck) //cargo en locals lo que hay en session
+/* .use(cookieCheck) //cargo en session lo que hay en la cookie
+.use(localsUserCheck) //cargo en locals lo que hay en session */
+.use(userValidation)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

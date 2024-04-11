@@ -32,3 +32,8 @@
    margin: 0 auto;
 }
 
+@media (max-width: 1024px) { 
+    .perfil .user{
+        width: 90%;
+    }
+}

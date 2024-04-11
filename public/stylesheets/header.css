@@ -77,7 +77,7 @@ header article a {
     justify-content: space-around;
     width: 100%;
     background-color: black;
-    left: -500px;
+    left: -800px;
     z-index: 100;
     transition: all 1s;
   }

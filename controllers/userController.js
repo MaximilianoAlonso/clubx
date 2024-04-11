@@ -20,7 +20,7 @@ guardarUsuario: (req, res) => {
     users.push(newUser)
     fs.writeFileSync('./data/users.json', JSON.stringify(users, null, 3), 'utf-8')
     
-    res.redirect("perfil");
+    res.redirect("/login");
    },
    
    login: (req, res) => {
@@ -38,9 +38,9 @@ guardarUsuario: (req, res) => {
                name: user.name
            };
            res.cookie('clubx', req.session.userLogin, { maxAge: 1000 * 600 }); 
-           res.redirect("perfil"); 
+           res.redirect("/perfil"); 
        } else {
-           res.send('login'); 
+           res.send('ERROR'); 
        }
    },
    perfil: (req,res)=>{
