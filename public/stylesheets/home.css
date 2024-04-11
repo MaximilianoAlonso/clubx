@@ -316,23 +316,26 @@ color: white;
 
 
   .proximasFechas .accesoFechas{
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
     z-index: 1000;
     display: flex;
-    
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
     }
     .proximasFechas .accesoFechas a {
-    display: block;
+    
     background-color: rgb(49, 182, 9);
-    padding: 2px;
+    padding: 8px;
     font-size: 18px;
     color: white;
     font-weight: 300;
     border-radius: 10px;
     text-align: center;
-    margin-left: 10px;
+    
     box-shadow: 0 0 5px greenyellow;
     
     }
