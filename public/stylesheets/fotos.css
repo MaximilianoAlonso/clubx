@@ -30,6 +30,10 @@ color: white;
     padding: 20px;
     text-align: center;
     }
+    .fechaFotoUnica{
+      width: 100% !important;
+      padding: 50px;
+    }
 
  /* detalle */ 
  .fotosDetail{
@@ -53,6 +57,7 @@ color: white;
  .fotosDetail .allImg{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 padding: 30px;
  }
  .fotosDetail .allImg img{

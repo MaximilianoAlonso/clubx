@@ -47,7 +47,7 @@ module.exports = {
   todasLasFotos: (req,res) => {
     let fotosData = JSON.parse(fs.readFileSync("./data/fotos.json", "utf-8"));
     let id = req.params.id
-    let detalle = fotosData.find(a => a.id = id)
+    let detalle = fotosData.find(a => a.id == id)
     res.render("detailFoto",{
       ...detalle
     });
@@ -64,8 +64,8 @@ module.exports = {
   todasLasFechas: (req,res) => {
     let fotosData = JSON.parse(fs.readFileSync("./data/fechas.json", "utf-8"));
     let id = req.params.id
-    let detalle = fotosData.find(a => a.id = id)
-    res.render("detailFoto",{
+    let detalle = fotosData.find(a => a.id == id)
+    res.render("detailFechas",{
       ...detalle
     });
   },

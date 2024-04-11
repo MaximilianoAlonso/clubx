@@ -2,6 +2,7 @@
   {
     "id": 1,
     "titulo": "Sabado 12/12",
+    "subtitulo":"asd",
     "contenido": "",
     "fotos": [
       "1712722134868-fecha1.png"
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "titulo": "jueves18/12",
+    "subtitulo":"asd",
     "contenido": "",
     "fotos": [
       "1712722191517-fecha3.png"

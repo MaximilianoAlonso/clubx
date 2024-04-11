@@ -9,12 +9,13 @@
     <h2><%= subtitulo %></h2>
     <p><%= contenido %></p>
       <section class="allImg">
-            <% for( let i = 0; i < fotos.length; i++ ) { %>
-              <div class="fondoFoto">
-                 <img class="fotosZoom" src="/images/<%= fotos[i] %>" alt="...">
-              </div>
+            <% fotos.forEach(element => { %>
+             
+   
+                 <img class="fotosZoom" src="/images/<%= element %>" alt="...">
+              
            
-        <% } %>
+        <% }) %>
       </section>
     
 

@@ -84,55 +84,55 @@ module.exports = {
     res.render("formFechas");
   },
   fechasProcess: (req, res) => {
-
+   
     const {
-      titulo,
-      subtitulo,
-      contenido,
-      fotos,
+        titulo,
+        subtitulo,
+        contenido,
+        fotos,
+        
+        
+      } = req.body;
+  
+      let fotosData = JSON.parse(fs.readFileSync("./data/fechas.json", "utf-8"));
       
-      
-    } = req.body;
-
-    let fotosData = JSON.parse(fs.readFileSync("./data/fechas.json", "utf-8"));
-    
-    // Crear objeto con los datos del artículo
-    let nuevoAlbum = {
-      id: fotosData.length > 0 ? fotosData[fotosData.length - 1].id + 1 : 1,
-      titulo,
-      subtitulo,
-      contenido,
-      fotos:req.files.map(file => file.filename)
-    };
-
-    // Leer el archivo JSON actual
-        fs.readFile("data/fechas.json", "utf8", (err, data) => {
-          if (err) {
-          console.error(err);
-          res.status(500).send("Error interno del servidor");
-          return;
-           }
-
-      let fotosData = JSON.parse(data);
-      console.log(req.files && req.files.fotos ? req.files.fotos.map(file=> file.filename) : [])
-   // Agregar el nuevo artículo al arreglo
-      fotosData.push(nuevoAlbum);
-
-   // Escribir los datos actualizados en el archivo JSON
-      fs.writeFile(
-        "data/fechas.json",
-        JSON.stringify(fotosData, null, 2),
-        (err) => {
-          if (err) {
+      // Crear objeto con los datos del artículo
+      let nuevoAlbum = {
+        id: fotosData.length > 0 ? fotosData[fotosData.length - 1].id + 1 : 1,
+        titulo,
+        subtitulo,
+        contenido,
+        fotos:req.files.map(file => file.filename)
+      };
+  
+      // Leer el archivo JSON actual
+          fs.readFile("data/fechas.json", "utf8", (err, data) => {
+            if (err) {
             console.error(err);
             res.status(500).send("Error interno del servidor");
             return;
-          }
-
-            res.redirect("/dashboard");
-        }
-      );
-    });
+             }
   
-},  
+        let fotosData = JSON.parse(data);
+        console.log(req.files && req.files.fotos ? req.files.fotos.map(file=> file.filename) : [])
+     // Agregar el nuevo artículo al arreglo
+        fotosData.push(nuevoAlbum);
+  
+     // Escribir los datos actualizados en el archivo JSON
+        fs.writeFile(
+          "data/fechas.json",
+          JSON.stringify(fotosData, null, 2),
+          (err) => {
+            if (err) {
+              console.error(err);
+              res.status(500).send("Error interno del servidor");
+              return;
+            }
+  
+              res.redirect("/dashboard");
+          }
+        );
+      });
+    
+  },
 };
