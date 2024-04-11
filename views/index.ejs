@@ -16,9 +16,13 @@
                 <div> 
                   <img src="../images/<%= item.fotos[0]%> " alt="" />
                 </div>
-            <% }) %>
-                
-             
+           
+             <div class="accesoFechas">
+              <a class="botonInfo" href="detailFechas/<%= item.id %>">Más Info</a>
+              
+              <a class="botonComprar" href="<%= item.link %>">Comprar</a>
+             </div>   
+              <% }) %>
           </section>
         </article>
         <article class="proximasFechas">

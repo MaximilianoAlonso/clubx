@@ -9,12 +9,13 @@
           Todas las fechas
         </h1>
         <section>
-          <% fechasData.forEach(element => { %>
-            <a class="card" href="detailFechas/<%= element.id %>">
-              <img src="images/<%= element.fotos[0] %>" alt="">
-              <h2><%= element.titulo %></h2>
-              <p><%= element.contenido %></p>
+          <% fechasData.forEach(item => { %>
+            <a class="card" href="detailFechas/<%= item.id %>">
+              <img src="images/<%= item.fotos[0] %>" alt="">
+              <h2><%= item.titulo %></h2>
+              <p><%= item.contenido %></p>
             </a>
+          
            
           <% }) %>
         </section>

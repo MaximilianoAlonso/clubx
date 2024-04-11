@@ -90,7 +90,7 @@ module.exports = {
         subtitulo,
         contenido,
         fotos,
-        
+        link,
         
       } = req.body;
   
@@ -102,6 +102,7 @@ module.exports = {
         titulo,
         subtitulo,
         contenido,
+        link,
         fotos:req.files.map(file => file.filename)
       };
   

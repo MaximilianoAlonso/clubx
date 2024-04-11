@@ -8,3 +8,17 @@
     padding: 20px;  
 }
     
+
+.datailBotonComprar{
+   position: relative;
+   top: 270px;
+    background-color: rgb(49, 182, 9);
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: 0 0 5px greenyellow;
+}

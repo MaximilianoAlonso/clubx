@@ -4,22 +4,22 @@
 
   <body>
     <%- include('./partials/header') %>
-    <main class="fotosDetail">
-      <h1>aasdasdasdasdasdasdasd</h1>
+    <main class="fotosDetail fechasDetail">
+   <a class="datailBotonComprar" href="<%= link %>">COMPRAR</a>
       <h1><%= titulo %></h1>
      <h2><%= subtitulo %></h2>
      <p><%= contenido %></p>
        <section class="allImg">
         <% if (!fotos[2]) { %>
           <img class="fechaFotoUnica" src="/images/<%= fotos[0] %>" alt="...">
+          
         <% }else {  %>
              <% fotos.forEach(element => { %>
-              
-    
                   <img src="/images/<%= element %>" alt="...">
                 <% }) %>
+
             <% } %>
-        
+        <div><a href="<"></a></div>
        </section>
      
  

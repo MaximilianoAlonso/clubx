@@ -1,20 +1,14 @@
 [
+  
   {
-    "id": 1,
-    "titulo": "Sabado 12/12",
-    "subtitulo":"asd",
-    "contenido": "",
+    "id": 3,
+    "titulo": "La T y la M - Club X, San Juan",
+    "subtitulo": " Viernes 19 Abril, 23:00 hrs. (GMT-03:00)",
+    "contenido": "Paula Albarracín de Sarmiento Norte 649, San Juan, Provincia de San Juan, Argentina",
+    "link": 
+      "https://vivaticket.com.ar/events/la-t-y-la-m",
     "fotos": [
-      "1712722134868-fecha1.png"
-    ]
-  },
-  {
-    "id": 2,
-    "titulo": "jueves18/12",
-    "subtitulo":"asd",
-    "contenido": "",
-    "fotos": [
-      "1712722191517-fecha3.png"
+      "1712861776277-e872cc82dbe7b07c31d9-portada00.avif"
     ]
   }
 ]
