@@ -4,7 +4,7 @@ const { hashSync } = require("bcryptjs");
 
 module.exports = {
   adminLogin: (req, res) => {
-    res.render("admin");
+    res.render("admin/admin");
   },
   adminProcess: (req, res) => {
     const { identificacion, password } = req.body;
@@ -23,10 +23,10 @@ module.exports = {
     }
   },
   dashboard: (req, res) => {
-    res.render("dashboard");
+    res.render("admin/dashboard");
   },
   adminFotos: (req, res) => {
-    res.render("formFotos");
+    res.render("admin/formFotos");
   },
   fotosProcess: (req, res) => {
    
@@ -81,7 +81,7 @@ module.exports = {
     
   },
   adminFechas: (req, res) => {
-    res.render("formFechas");
+    res.render("admin/formFechas");
   },
   fechasProcess: (req, res) => {
    
@@ -130,7 +130,7 @@ module.exports = {
               return;
             }
   
-              res.redirect("/dashboard");
+              res.redirect("admin/dashboard");
           }
         );
       });

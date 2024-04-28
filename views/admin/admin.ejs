@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+  <%- include('../partials/head') %>
 
   <body>
-    <%- include('./partials/header') %>
-    <main class="home">
-        <article class="beneficios login">
-          <h2 id="registro">Ingresar como administrador</h2>
+    <%- include('../partials/header') %>
+    <main class="home ">
+        <article class="beneficios login admin">
+         
          
           <form id="registro" method="post">
+            <h2>Ingresar como administrador</h2>
             <input type="text" name="identificacion" id="identificacion" placeholder="Numero de identiicacion" />
             <input type="password" name="password" id="password" placeholder="Contraseña" />
             <button type="submit">Ingresar!</button>
           </form>
         </article>
       </main>
-    <%- include('./partials/footer') %>   
-    <%- include('./partials/scripts') %>
-  </body>
+
+    <%- include('../partials/scripts') %>
+  </body> 
 </html>

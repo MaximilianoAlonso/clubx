@@ -1,15 +1,16 @@
+  
 <!DOCTYPE html>
 <html lang="es">
   <%- include('./partials/head') %>
 
   <body>
     <%- include('./partials/header') %>
-    <main class="home">
+    <main class="home desplazamientoAltura" >
       <section class="contenido">
         <article class="presentacion">
           <p id="typer"></p>
         </article>
-        <article class="proximasFechas">
+        <article class="proximasFechas" id="fechasNuevasContainer"  >
           <h2>Proximas Fechas</h2>
           <section>
             <% fechasData.forEach((item,i )=> { %>
@@ -22,22 +23,24 @@
               
               <a class="botonComprar" href="<%= item.link %>">Comprar</a>
              </div>   
+              <% if (i === 0) { return; } %> <!-- Limitar la iteración a 5 elementos -->
               <% }) %>
           </section>
         </article>
-        <article class="proximasFechas">
-          
-          <section class="ultimasFotos">
+        <article  class="proximasFechas ultimasFotos">
            <h2 class="tituloUltimasFotos">Ultimas fotos</h2>
-            <% fotosData.forEach(element => { %>
+          <section class="ultimasFotos">
+          
+            <% fotosData.forEach((element, i) => { %>
+              <% if (i === 4) { return; } %> <!-- Limitar la iteración a 5 elementos -->
               <a class="card" href="detailFoto/<%= element.id %>">
-                <img src="images/<%= element.fotos[0] %>" alt="">
+                <img src="./images/<%= element.fotos[0] %>" alt="">
                 <h2><%= element.titulo %></h2>
                 <p><%= element.contenido %></p>
               </a>
-             
             <% }) %>
-             
+           
+            
         </article>
       </section>
     </main>
@@ -58,3 +61,4 @@
   </script>
     <%- include('./partials/scripts') %>
 </html>
+

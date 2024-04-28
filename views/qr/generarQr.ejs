@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../partials/head') %>
+
+  <body>
+    <%- include('../partials/header') %>
+<main>
+   <form  class="formQr" method="post">
+    <h2>Generar QR</h2>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+      <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+      <input type="email" name="email" id="email" placeholder="Email">
+      <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" required>
+      <input type="text" name="estado" id="estado" value="ACTIVO" readonly hidden>
+      <button id="botonGuard  ar" class="botonCrear" type="submit">Guardar y Descargar</button>
+    </form>
+</main>
+        
+    <%- include('../partials/scripts') %>
+  </body>
+</html>

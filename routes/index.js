@@ -1,29 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const multer  = require("multer")
+const multer = require("multer");
 const checkUser = require("../middlewares/checkUser");
 const checkAdmin = require("../middlewares/checkAdmin");
-const path = require('path');
 
-
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'public/images');
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname);
-  }
-});
-
-const upload = multer({ storage: storage });
 const {
   fechas,
   fotos,
   index,
-  verificarQr,
   todasLasFotos,
-  todasLasFechas
-  /*  verificarQr, */
+  todasLasFechas,
+  crearQr,
+  guardarQr,
+  modificarQr,
+  verificarQr
 } = require("../controllers/indexController");
 const {
   registro,
@@ -31,7 +21,8 @@ const {
   login,
   processLogin,
   perfil,
-  logOut
+  logOut,
+  
 } = require("../controllers/userController");
 const {
   adminLogin,
@@ -40,39 +31,53 @@ const {
   adminFechas,
   fotosProcess,
   adminFotos,
-  fechasProcess
+  fechasProcess,
+
 } = require("../controllers/adminController");
 
+/* ---------------------- MULTER ----------------------- */
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "public/images");
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + "-" + file.originalname);
+  },
+});
+const upload = multer({ storage: storage });
 
 router
-/* Index */
+
+  /*--------------------- INDEX --------------------- */
   .get("/", index)
   .get("/registro", registro)
   .get("/login", login)
   .get("/fotos", fotos)
   .get("/fechas", fechas)
 
-/* users */
+  /*--------------------- USERS ---------------------*/
   .post("/registro", guardarUsuario)
   .post("/login", processLogin)
   .get("/perfil", checkUser, perfil)
-  .get('/logOut', logOut)
-  
-  /* Admin */
+  .get("/logOut", logOut)
+
+  /*--------------------- ADMIN ---------------------*/
   .get("/admin", adminLogin)
   .get("/dashboard", checkAdmin, dashboard)
-    .post("/admin", adminProcess)
+  .post("/admin", adminProcess)
 
   .get("/formFechas", checkAdmin, adminFechas)
-  .post("/formFechas", upload.array('fotos', 10), fechasProcess)
+  .post("/formFechas", upload.array("fotos", 10), fechasProcess)
   .get("/detailFechas/:id", todasLasFechas)
 
   .get("/formFotos", checkAdmin, adminFotos)
-  .post("/formFotos", upload.array('fotos', 30), fotosProcess)
+  .post("/formFotos", upload.array("fotos", 30), fotosProcess)
   .get("/detailFoto/:id", todasLasFotos)
 
-
-  /* QR */    
- .get("/verificar/:id", verificarQr);
-
+  /*--------------------- QR ---------------------*/
+  .get("/dashboard/crearQr", crearQr)
+  .post("/dashboard/crearQr", guardarQr)
+  .get("/dashboard/verificar/:id", verificarQr)
+  .post("/dashboard/verificar/:id", modificarQr)
 module.exports = router;

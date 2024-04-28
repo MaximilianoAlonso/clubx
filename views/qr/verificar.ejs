@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../partials/head') %>
+
+  <body>
+    <%- include('../partials/header') %>
+   <main style="padding-top: 70px;">
+<section class="qrContainer">
+
+<ul  class="cardQr">
+  
+  <li> <b>COMPRADOR: <br> </b></li>
+  <hr> <br>
+  <li><b>NOMBRE: <br> </b><%= nombre %></li>
+  <li><b>APELLIDO:  <br></b><%= apellido %></li>
+  <li><b>CORREO: <br> </b><%= email %></li>
+  <li><b>TELEONO: <br> </b><%= telefono %></li>
+  <li><b>DESCRIPCIÓN: <br> </b><%= descripcion %></li>
+  <li><b>ESTADO QR:  <br></b><b class="estadoQr"><%= estado %></b> </li>
+</ul>
+<form   method="post">
+
+    <input hidden type="text" name="nombre" id="nombre" value="<%= nombre %>" >
+    <input hidden type="text" name="apellido" id="apellido" value="<%= apellido %>" >
+    <input hidden type="text" name="telefono" id="telefono" value="<%= telefono %>" >
+    <input hidden type="email" name="email" id="email" value="<%= email %>" >
+    <input hidden type="text" name="descripcion" id="descripcion" value="<%= descripcion %>">
+    <input hidden type="text" name="estado" id="estado" value="CADUCADO" readonly hidden>
+    <button id="botonGuard  ar" class="botonCrear" type="submit">Guardar y Descargar</button>
+  </form>
+ 
+</section>
+   </main>
+      
+      
+        </body>
+
+    <%- include('../partials/scripts') %>
+  </body>
+</html>
+  
