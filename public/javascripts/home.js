@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
             main.style.height = "2500px";
         } else {
             // Si es una pantalla más grande, se mantienen los valores originales
-            paddingBody = -1600;
-            main.style.height = "1900px";
+            paddingBody = -1700;
+            main.style.height = "2100px";
         }
 
         // Calculamos la altura total de las secciones y el footer

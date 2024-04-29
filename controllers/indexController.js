@@ -179,7 +179,7 @@ module.exports = {
         telefono,
         email,
         descripcion,
-        estado: 'ACTIVO'
+        estado: 'CADUCADO'
       };
 
       fs.writeFile(qrDataFilePath, JSON.stringify(qrDataArray, null, 2), (err) => {
@@ -189,7 +189,7 @@ module.exports = {
           return;
         }
 
-        res.redirect(`/dashboard/verificarQr/${id}`);
+        res.redirect(`/dashboard/verificar/${id}`);
       });
     });
   }

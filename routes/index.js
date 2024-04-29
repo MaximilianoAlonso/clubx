@@ -76,8 +76,8 @@ router
   .get("/detailFoto/:id", todasLasFotos)
 
   /*--------------------- QR ---------------------*/
-  .get("/dashboard/crearQr", crearQr)
-  .post("/dashboard/crearQr", guardarQr)
-  .get("/dashboard/verificar/:id", verificarQr)
+  .get("/dashboard/generarQr", crearQr)
+  .post("/dashboard/generarQr", guardarQr)
+  .get("/dashboard/verificar/:id?", verificarQr)
   .post("/dashboard/verificar/:id", modificarQr)
 module.exports = router;
